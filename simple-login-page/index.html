@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Login Page</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+        }
+        input{
+            height: 30px;
+            width: 400px;
+            text-align: center;
+        }
+        button{
+            height: 30px;
+            width: 150px;
+            border: none;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Please Log in Here!</h1>
-    <input type="email" type="number" name="login-email-number" id="login-email-number">
-    <input type="password" name="login-password" id="login-password">
-    <button type="submit">Login</button>
+    <div class="container">
+        <input placeholder="Enter Email or Phone Number" type="email" type="number" name="login-email-number" id="login-email-number">
+        <input placeholder="Enter Password" type="password" name="login-password" id="login-password">
+        <button type="submit">Login</button>
+    </div>
 </body>
 </html>

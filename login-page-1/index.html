@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN PAGE 0.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
     <style>
         body{
+            /* font-family: 'Rubik Vinyl', cursive; */
+            font-family: 'Poppins', sans-serif;
             background-color: antiquewhite;
             margin: 0;
         }
@@ -14,10 +17,14 @@
             /* text-align: center; */
             width: 50%;
             background-color: pink;
-            margin-top: 80px;
-            margin-left: 215px;
-            padding: 100px 0 100px 260px;
+            margin-top: 100px;
+            margin-left: 270px;
+            padding: 50px 0 100px 100px;
             border-radius: 10px;
+        }
+        .container h1{
+            font-size: 40px;
+            font-weight: bolder;
         }
         .column-flex{
             display: flex;
@@ -52,7 +59,7 @@
 <body>
     <div class="container">
         <h1>Welcome to Login Page 0.1</h1>
-        <h3>Login Here!</h3>
+        <h2>Login Here!</h2>
         <div class="column-flex">
             <input type="email" name="email" id="email" placeholder="enter email or phone number">
             <input type="password" name="password" id="password" placeholder="enter password">

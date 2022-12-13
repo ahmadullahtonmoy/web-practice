@@ -17,6 +17,9 @@ body{
     font-size: 40px;
     font-weight: bolder;
 }
+#welcome{
+    color: rebeccapurple;
+}
 .column-flex{
     display: flex;
     flex-direction: column;
@@ -44,4 +47,6 @@ body{
     border-top: none;
     border-right: none;
     border-bottom-left-radius: 5px;
+    color: grey;
+    font-weight: 700;
 }

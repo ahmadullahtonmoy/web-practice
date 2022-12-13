@@ -5,6 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN PAGE 0.1</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            margin: 0;
+        }
+        .container{
+            /* text-align: center; */
+            width: 50%;
+            background-color: pink;
+            margin-top: 80px;
+            margin-left: 215px;
+            padding: 100px 0 100px 260px;
+            border-radius: 10px;
+        }
+        .column-flex{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        #email , #password{
+            width: 300px;
+            height: 30px;
+            padding: 0 0 0 10px;
+            background-color: whitesmoke;
+            border: 2px solid rebeccapurple;
+            border-top-left-radius: 5px;
+            border-bottom: none;
+            border-right: none;
+        }
+        #password{
+            border-top: none;
+            border-radius: 0;
+        }
+        #login-btn{
+            width: 150px;
+            height: 31px;
+            background-color: whitesmoke;
+            border: 2px solid rebeccapurple;
+            border-top: none;
+            border-right: none;
+            border-bottom-left-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -13,6 +56,7 @@
         <div class="column-flex">
             <input type="email" name="email" id="email" placeholder="enter email or phone number">
             <input type="password" name="password" id="password" placeholder="enter password">
+            <button id="login-btn">LOG IN</button>
         </div>
     </div>
 </body>

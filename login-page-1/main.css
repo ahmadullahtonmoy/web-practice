@@ -50,3 +50,9 @@ body{
     color: grey;
     font-weight: 700;
 }
+
+footer{
+    background-color: gray;
+    margin-top: 180px;
+    height: 100px;
+}

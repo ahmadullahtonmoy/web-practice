@@ -3,9 +3,16 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.blogs{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
 .blog{
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .blog-item{
     width: 45%;

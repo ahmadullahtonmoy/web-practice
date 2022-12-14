@@ -3,11 +3,30 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 29px;
+    background-color: whitesmoke;
+    /* border: 1px solid red; */
+}
+nav a{
+    text-decoration: none;
+    color: gray;
+}
+.menu{
+    display: flex;
+    gap: 35px;
+}
+.profile{
+    display: flex;
+    gap: 35px;
+}
+
 .blogs{
     margin-top: 50px;
     margin-bottom: 150px;
 }
-
 .blog{
     display: flex;
     justify-content: space-around;

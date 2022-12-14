@@ -9,8 +9,14 @@ body{
 }
 .blog-item{
     width: 45%;
+    text-align: justify;
+    /* border: 1px solid red;*/ /*temp margin to test */
+}
+.article{
+    padding: 0 15px;
 }
 .blog-item img{
     width: 100%;
     border-radius: 15px;
+    margin-top: 28px;
 }

@@ -105,8 +105,16 @@ footer{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+footer a{
+    text-decoration: none;
+    color: black;
+}
 .box{
     width: 250px;
     display: flex;
     flex-direction: column;
+    font-weight: 300;
+}
+.pages a:hover , .links a:hover , .common-anchors:hover{
+    color: blue;
 }

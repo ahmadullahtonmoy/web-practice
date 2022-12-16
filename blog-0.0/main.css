@@ -6,6 +6,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 5px 29px;
+    height: 30px;
     background-color: whitesmoke;
     /* border: 1px solid red; */
 }
@@ -19,9 +20,10 @@ nav a{
     gap: 25px;
 }
 .menu a:hover{
-    background-color: black;
+    border: 1px solid blue;
     border-radius: 5px;
-    color: whitesmoke;
+    background-color: white;
+    color: blue;
 }
 .profile{
     display: flex;
@@ -29,8 +31,13 @@ nav a{
 }
 #user-icon{
     color: black;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50%;
+}
+#user-icon:hover{
+    /* border-color: blue; */
+    border: 1px solid blue;
+    color: blue;
 }
 .search-icon{
     color: black;
@@ -39,7 +46,7 @@ nav a{
     border-radius: 20px;
 }
 #nav-search:hover{
-    border: 1px solid gray;
+    border: 1px solid blue;
 }
 
 .blogs{

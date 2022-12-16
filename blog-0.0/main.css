@@ -2,12 +2,19 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+header{
+    background-image: url(assets/banner0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     padding: 5px 29px;
     height: 30px;
-    background-color: whitesmoke;
     /* border: 1px solid red; */
 }
 nav a{
@@ -22,7 +29,6 @@ nav a{
 .menu a:hover{
     border: 1px solid blue;
     border-radius: 5px;
-    background-color: white;
     color: blue;
 }
 .profile{
@@ -49,14 +55,7 @@ nav a{
     border: 1px solid blue;
 }
 
-.banner{
-    background-image: url(assets/banner0.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+
 
 .blogs{
     margin-top: 50px;

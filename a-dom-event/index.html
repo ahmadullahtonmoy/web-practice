@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENT</title>
+</head>
+<body>
+    <h1>A DOM Event Going On</h1>
+    <h2 id="click-handler">DEFAULT TEXT.......</h2>
+    <h2 id="input-text">Input Text....</h2>
+    <br>
+    <input type="text" name="updated-text" id="updated-text">
+    <button id="update-input">Update</button>
+    <br>
+    <br>
+
+    <button onclick="handleOnClick()">Handle Event By On Click Function</button>
+    <button id="event-listener">Handle Event By Add Event Listener</button>
+    <script src="main.js"></script>
+    <script>
+           document.getElementById('update-input').addEventListener('click',function(){
+            const textBox = document.getElementById('updated-text');
+            const boxText = textBox.value;
+
+            const inputTextOn = document.getElementById('input-text');
+            inputTextOn.innerText = boxText;
+
+            textBox.value = '';
+           });
+    </script>
+</body>
+</html>

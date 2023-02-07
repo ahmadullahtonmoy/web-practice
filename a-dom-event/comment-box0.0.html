@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box 0.0</title>
+</head>
+<body>
+    <h1>Comment Box 0.0  DOM Event Going On.....</h1>
+
+    <div id="comment-box">
+        <p class="p1">This is P1</p>
+        <p class="p2">This is P2</p>
+    </div>
+    <input id="text-field" type="text">
+    <button id="cmnt-btn">COMMENT</button>
+
+    <script>
+        document.getElementById('cmnt-btn').addEventListener('click' , function(){
+            const textField = document.getElementById('text-field');
+            const textData = textField.value;
+            const p0 = document.createElement('p');
+            const element1 = document.getElementById('comment-box');
+            element1.appendChild(p0);
+            p0.appendChild(textData);
+        });
+        const para = document.createElement('p');
+        // const node = document.createTextNode('This is a new comment');
+        // para.appendChild(node);
+        // 
+        // 
+    </script>
+</body>
+</html>

@@ -23,13 +23,9 @@
             const p0 = document.createElement('p');
             const element1 = document.getElementById('comment-box');
             element1.appendChild(p0);
-            p0.appendChild(textData);
+            p0.innerText = textData;
+            textField.value = '';
         });
-        const para = document.createElement('p');
-        // const node = document.createTextNode('This is a new comment');
-        // para.appendChild(node);
-        // 
-        // 
     </script>
 </body>
 </html>

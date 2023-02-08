@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box 0.2</title>
+</head>
+<body>
+    <div id="comment-section">
+        <h2>Leave a Comment</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <h2>Comments</h2>
+        <div id="comments-list"></div>
+      </div>
+    <script>
+        const form = document.querySelector('form');
+const nameInput = document.querySelector('#name');
+const commentInput = document.querySelector('#comment');
+const commentsList = document.querySelector('#comments-list');
+
+form.addEventListener('submit', event => {
+  event.preventDefault();
+
+  const name = nameInput.value;
+  const comment = commentInput.value;
+
+  const commentHTML = `
+    <div>
+      <h4>${name}</h4>
+      <p>${comment}</p>
+    </div>
+  `;
+
+  commentsList.insertAdjacentHTML('beforeend', commentHTML);
+
+  nameInput.value = '';
+  commentInput.value = '';
+});
+
+    </script>      
+</body>
+</html>
